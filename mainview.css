@@ -1,0 +1,65 @@
+/* Styles for Header */
+.header {
+    background-color: pink;
+    padding: 20px;
+    text-align: center;
+    color: rgb(230, 95, 95);
+    font-size: 24px;
+  }
+  
+  /* Styles for Body */
+  .body {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Styles for Tile */
+  .tile {
+    background-color: white;
+    border: 2px solid pink;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 10px;
+    color: red
+  }
+  
+  /* Styles for H2 Text */
+  .h2-text {
+    color: pink;
+  }
+  
+  /* Overall Body Styles */
+  body {
+    background-color: #ffd1dc; /* Light pink */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Styles for Footer */
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: pink;
+  padding: 10px 20px;
+  text-align: center;
+  color: white;
+  font-size: 16px;
+}
+/* Styles for Button */
+.button {
+    background-color: rgb(126, 57, 69);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+
+  
