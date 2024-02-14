@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+    <meta charset="utf-8">
+    <title>Would you be my Valentine??</title> <!--working title...-->
+    <link href="mainview.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+    <div class="banner"></div>
+
+    <div class="header">
+        <div class="container">
+            <h1>Today is February 14th!</h1>
+        </div>
+    </div>
+
+    <div class="big-page-container">
+        <div>
+            <h2>Yayayay!! I love you sweet bb!</h2>
+            <h2>I'm so lucky to be your Valentine!</h2>
+            <h2>I hope you enjoyed this little game!</h2>
+            <p>Now, I'll drop hints about your activity tonight throughout the day</p>
+            <p>So keep checking in and see if you can figure it out!</p>
+            <div id="clock"></div>
+            <h2>Now you have to wait until 9 am to get your first hint here:</h2>
+            <div id="onehiddenContent">
+                <p>Who are some of your running / gym buddies? (They've been sworn to secrecy)</p>
+                <h3>Next hint at 10:30 AM</h3>
+            </div>
+            <div id="twohiddenContent">
+                <p>I've been here (well sort of), you've been here, and someone lives here</p>
+                <h3>Next hint at Noon</h3>
+            </div>
+            <div id="threehiddenContent">
+                <p>Trick or treat? Only treats here. </p>
+                <h3>Next hint at 2 PM</h3>
+            </div>
+            <div id="fourhiddenContent">
+                <h3>Last hint!</h3>
+                <p>What sort of food do we usually eat for our anniversary?</p>
+                <p>Meet at these coordinates at 6 pm: 36.011969, -78.948753</p>
+                <p>No peeking at where it is haha</p>
+            </div>
+        <div>
+        
+            <img class="separate" src="IMG_8452.jpeg" alt="fingerscrossed!">
+        </div>
+      </div>
+    </div>
+
+
+    <script>
+        // JavaScript code to show content at 3 PM
+        document.addEventListener('DOMContentLoaded', function() {
+          var currentTime = new Date();
+          var hours = currentTime.getHours();
+          var minutes = currentTime.getMinutes();
+
+          // Check if it's 3 PM or later
+          if (hours >= 9) {
+            document.getElementById('onehiddenContent').style.display = 'block';
+          }
+          if (hours >= 10 && minutes >= 30) {
+            document.getElementById('twohiddenContent').style.display = 'block';
+          }
+          if (hours >= 12) {
+            document.getElementById('threehiddenContent').style.display = 'block';
+          }
+          if (hours >= 14) {
+            document.getElementById('fourhiddenContent').style.display = 'block';
+          }
+        });
+        var clock = document.getElementById('clock');
+
+        // Function to update the clock
+        function updateClock() {
+        var now = new Date();
+
+        // Format the time as HH:MM:SS
+        var hours = now.getHours().toString().padStart(2, '0');
+        var minutes = now.getMinutes().toString().padStart(2, '0');
+        var seconds = now.getSeconds().toString().padStart(2, '0');
+
+        // Update the clock element with the current time
+        clock.textContent = hours + ':' + minutes + ':' + seconds;
+        }
+
+        // Update the clock every second
+        setInterval(updateClock, 1000);
+
+        // Initial call to update the clock immediately
+        updateClock();
+        
+      </script>
+      
+</body>
+</html>

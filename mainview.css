@@ -66,8 +66,19 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
     justify-content: center;
-    height: 100vh;
+    height: 80vh;
+    background-color: #ffe6e6; /* Light red */
+    color: rgb(183, 111, 123);
+  }
+  .big-page-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    height: 112vh;
     background-color: #ffe6e6; /* Light red */
     color: rgb(183, 111, 123);
   }
@@ -77,6 +88,36 @@
     width: 400px;
     height: 500px;
     background-image: url('your-photo-url.jpg'); /* Add your photo URL here */
+    background-size: cover;
+    background-position: center;
+    border-radius: 5%;
+    margin-bottom: 20px;
+  }
+
+  .photo2 {
+    width: 600px;
+    height: 500px;
+    position: center;
+    background-size: cover;
+    background-position: center;
+    border-radius: 5%;
+    margin-bottom: 20px;
+  }
+
+  .random {
+    width: 600px;
+    height: 800px;
+    position: center;
+    background-size: cover;
+    background-position: center;
+    border-radius: 5%;
+    margin-bottom: 20px;
+  }
+
+  .separate {
+    width: 300px;
+    height: 400px;
+    position: center;
     background-size: cover;
     background-position: center;
     border-radius: 5%;
@@ -101,12 +142,40 @@
     font-size: 16px;
     cursor: pointer;
   }
+  .buttoncenter {
+    background-color: #ff4d4d; /* Red */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    position: center;
+  }
   
   /* Different shade for alternate button */
   .button:nth-child(even) {
     background-color: #ff80aa; /* Pink */
   }
-  
-  
 
-  
+  .bigquestion {
+    font-size: 60 px;
+    color: rgb(183, 111, 123);
+  }
+
+#onehiddenContent {
+    display: none;
+}
+
+#twohiddenContent {
+    display: none;
+}
+
+#threehiddenContent {
+    display: none;
+}
+
+#fourhiddenContent {
+    display: none;
+}
